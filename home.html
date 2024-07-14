@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Resorts</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+    <link rel="stylesheet" href="css/aos.css">
+</head>
+<body>
+    <!--Header Start-->
+    <!--Full Screen Navbar Start-->
+    
+    <div class="container-fluid nbar-toggle" id="nav-select">
+        <div class="nav-icon">
+            <div class="lines"></div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <h3 id="result"></h3>
+        <ul>
+            <li><a href="home.html" data-text="Home">Home</a></li>
+            <li><a href="services.html" data-text="Services">Services</a></li>
+            <li><a href="team.html" data-text="Team">Team</a></li>
+            <li><a href="resorts.html" data-text="Resorts">Resorts</a></li>
+            <li><a href="about-us.html" data-text="About">About Us</a></li>
+            <li><a href="contact-us.html" data-text="Contact">Contact Us</a></li>
+        </ul>
+    </div>
+    
+    <!--Full Screen Navbar End-->
+    <!--Header End-->
+    <!--Main Start-->
+    
+    <section class="main-bg">
+        <div data-aos="fade-down" class="content1">
+            <h2 class="title">Ocean Resorts</h2>
+            <p class="tagline">Dream Resorts</p>
+            <p class="tagline-sm">Dream</p>
+        </div>
+        <a data-aos="fade-down" href="resorts.html" class="book-now-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Book Now
+        </a>
+        <div class="center">
+            <div class="down"></div>
+        </div>
+        <div class="rain">
+            <div class="bg-filter"></div>
+        </div>
+    </section>
+    
+    <!--Booking Date Start-->
+    
+    <section class="booking">
+        <div data-aos="fade-down" class="title-group">
+            <p>Any Time Worldwide</p>
+            <h3>FIND YOUR IDEAL HOTEL</h3>
+        </div>
+        <form action="resorts.html">
+            <div data-aos="fade-down" class="main-group">
+                <div class="group">
+                    <label>Check In</label>
+                    <p class="text-field"><input type="text" id="datepicker" min="0" placeholder="Select Date" required><i class="far fa-calendar-alt"></i></p>
+                </div>
+                <div class="group">
+                    <label>Check Out</label>
+                    <p class="text-field"><input type="text" id="datepicker2" min="0" placeholder="Select Date" required><i class="far fa-calendar-alt"></i></p>
+                </div>
+                <div class="quantity group">
+                    <label>Adults</label>
+                    <div>
+                        <input class="for-numbers" type="number" min="0" value="1" required>
+                    </div>
+                </div>
+                <div class="quantity group">
+                    <label>Kids</label>
+                    <div>
+                        <input class="for-numbers" type="number" min="0" value="0">
+                    </div>
+                </div>
+                <div class="quantity group">
+                    <label>Room</label>
+                    <div>
+                        <input class="for-numbers" type="number" min="0" value="1" required>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up" class="button-div">
+                <input class="search" type="submit" value="Search Now">
+            </div>
+        </form>
+    </section>
+    
+    <!--Booking Date End-->
+    <!--About Hotel & Resort Start-->
+    
+    <section class="about">
+        <div class="about-1">
+            <div class="img1">
+                <div class="panel-button">
+                    <div data-aos="fade-right" class="button-container">
+                        <a href="resorts.html">Unrivaled Location</a>
+                    </div>
+                </div>
+            </div>
+            <div class="img-details">
+                <h2 data-aos="fade-left">Only five minutes walk from the <strong>harbour</strong></h2>
+                <p data-aos="fade-left">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!--About Hotel & Resort End-->
+    <!--Main Content Start-->
+    
+    <section class="main">
+        <div class="block no-padding">
+            <div class="row">
+                <div class="col-md-12 column">
+                    <div class="room-list">
+                        <ul class="rooms">
+                            <li onclick="a()" class="li-1 li" style="height: 586px;">
+                                <div data-aos="fade-down" class="room">
+                                    <img src="images/room1.jpg" alt="Room 1" style="width: 200%;">
+                                    <div class="room-name">
+                                        <h4 id="a">SINGLE <span>ROOM</span></h4>
+                                    </div>
+                                    <div class="room-detail">
+										<div class="room-inner">
+											<h3>SINGLE ROOM</h3>
+											<p>Cras justo odio, dapibus facilisis in, egestas egetam. Cum sociis natoque penatibus et magnis dis partunt montes, nascetur ridiculus mus. Duis mollis, nocom modo luctus</p>
+											<strong>$550 <i>- Per Night</i></strong>
+											<div class="room-features">
+												<span><i class="far fa-calendar-alt"></i></span>
+												<span><i class="fa fa-wifi"></i></span>
+												<span><i class="far fa-clock"></i></span>
+												<span><i class="fa fa-laptop"></i></span>
+												<span><i class="fa fa-umbrella"></i></span>
+											</div> 
+											<div class="view-more">
+												<a href="book-now.html">view more detail <i class="fas fa-long-arrow-alt-right"></i></a>
+											</div>
+										</div>
+									</div>
+                                </div>
+                            </li>
+                            <li onclick="b()" class="li-2 li" style="height: 586px;">
+                                <div data-aos="fade-down" data-aos-delay="200" class="room">
+                                    <img src="images/room2.jpg" alt="Room 2" style="width: 200%;">
+                                    <div class="room-name">
+                                        <h4 id="b">DOUBLE <span>ROOM</span></h4>
+                                    </div>
+                                    <div class="room-detail">
+										<div class="room-inner">
+											<h3>DOUBLE ROOM</h3>
+											<p>Cras justo odio, dapibus facilisis in, egestas egetam. Cum sociis natoque penatibus et magnis dis partunt montes, nascetur ridiculus mus. Duis mollis, nocom modo luctus</p>
+											<strong>$550 <i>- Per Night</i></strong>
+											<div class="room-features">
+												<span><i class="far fa-calendar-alt"></i></span>
+												<span><i class="fa fa-wifi"></i></span>
+												<span><i class="far fa-clock"></i></span>
+												<span><i class="fa fa-laptop"></i></span>
+												<span><i class="fa fa-umbrella"></i></span>
+											</div>
+											<div class="view-more">
+                                                <a href="book-now.html">view more detail <i class="fas fa-long-arrow-alt-right"></i></a>
+											</div>
+										</div>
+									</div>
+                                </div>
+                            </li>
+                            <li onclick="c()" class="li-3 li start active" style="height: 586px;">
+                                <div data-aos="fade-down" data-aos-delay="400" class="room">
+                                    <img src="images/room3.jpg" alt="Room 3" style="width: 200%;">
+                                    <div class="room-name">
+                                        <h4 id="c">TRIPLE <span>ROOM</span></h4>
+                                    </div>
+                                    <div class="room-detail">
+										<div class="room-inner">
+											<h3>TRIPLE ROOM</h3>
+											<p>Cras justo odio, dapibus facilisis in, egestas egetam. Cum sociis natoque penatibus et magnis dis partunt montes, nascetur ridiculus mus. Duis mollis, nocom modo luctus.</p>
+											<strong>$550 <i>- Per Night</i></strong>
+											<div class="room-features">
+												<span><i class="far fa-calendar-alt"></i></span>
+												<span><i class="fa fa-wifi"></i></span>
+												<span><i class="far fa-clock"></i></span>
+												<span><i class="fa fa-laptop"></i></span>
+												<span><i class="fa fa-umbrella"></i></span>
+											</div>
+											<div class="view-more">
+												<a href="book-now.html">view more detail <i class="fas fa-long-arrow-alt-right"></i></a>
+											</div>
+										</div>
+									</div>
+                                </div>
+                            </li>
+                            <li onclick="d()" class="li-4 li" style="height: 586px;">
+                                <div data-aos="fade-down" data-aos-delay="600" class="room">
+                                    <img src="images/room4.jpg" alt="Room 4" style="width: 200%;">
+                                    <div class="room-name">
+                                        <h4 id="d">LUXURY <span>ROOM</span></h4>
+                                    </div>
+                                    <div class="room-detail">
+										<div class="room-inner">
+											<h3>LUXURY ROOM</h3>
+											<p>Cras justo odio, dapibus facilisis in, egestas egetam. Cum sociis natoque penatibus et magnis dis partunt montes, nascetur ridiculus mus. Duis mollis, nocom modo luctus.</p>
+											<strong>$550 <i>- Per Night</i></strong>
+											<div class="room-features">
+												<span><i class="far fa-calendar-alt"></i></span>
+												<span><i class="fa fa-wifi"></i></span>
+												<span><i class="far fa-clock"></i></span>
+												<span><i class="fa fa-laptop"></i></span>
+												<span><i class="fa fa-umbrella"></i></span>
+											</div>
+											<div class="view-more">
+												<a href="book-now.html">view more detail <i class="fas fa-long-arrow-alt-right"></i></a>
+											</div>
+										</div>
+									</div>
+                                </div>
+                            </li>
+                            <li onclick="e()" class="li-5 li" style="height: 586px;">
+                                <div data-aos="fade-down" data-aos-delay="800" class="room">
+                                    <img src="images/room5.jpg" alt="Room 5" style="width: 200%;">
+                                    <div class="room-name">
+                                        <h4 id="e">HONEYMOON <span>ROOM</span></h4>
+                                    </div>
+                                    <div class="room-detail">
+										<div class="room-inner">
+											<h3>HONEYMOON ROOM</h3>
+											<p>Cras justo odio, dapibus facilisis in, egestas egetam. Cum sociis natoque penatibus et magnis dis partunt montes, nascetur ridiculus mus. Duis mollis, nocom modo luctus</p>
+											<strong>$550 <i>- Per Night</i></strong>
+											<div class="room-features">
+												<span><i class="far fa-calendar-alt"></i></span>
+												<span><i class="fa fa-wifi"></i></span>
+												<span><i class="far fa-clock"></i></span>
+												<span><i class="fa fa-laptop"></i></span>
+												<span><i class="fa fa-umbrella"></i></span>
+											</div>
+											<div class="view-more">
+												<a href="book-now.html">view more detail <i class="fas fa-long-arrow-alt-right"></i></a>
+											</div>
+										</div>
+									</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--Main Content End-->
+    <!--Main Section End-->
+    <!--Footer Area Start-->
+    <section class="clearfix" style="background: #0e0923;">
+        <img src="" alt="">
+    </section>
+    <section class="page-footer font-small unique-color-dark">
+        <div style="background-color: #0e0923;">
+            <div class="container">
+                <div class="row py-4 d-flex align-items-center">
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0">Get connected with us on social networks!</h6>
+                    </div>
+                    <div class="col-md-6 col-lg-7 text-center text-md-right social-icons">
+                        <a class="fb-ic">
+                            <i class="fab fa-facebook-f white-text mr-4"> </i>
+                        </a>
+                        <a class="tw-ic">
+                            <i class="fab fa-twitter white-text mr-4"> </i>
+                        </a>
+                        <a class="gplus-ic">
+                            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+                        </a>
+                        <a class="li-ic">
+                            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                        </a>
+                        <a class="ins-ic">
+                            <i class="fab fa-instagram white-text"> </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center text-md-left mt-5">
+            <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 para-margin-remove">
+                    <h6 class="text-uppercase font-weight-bold titles">Ocean Resorts</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p class="footer-text">Here you can book resorts &amp; hotels for your vacations and business trips.</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 para-margin-remove">
+                    <h6 class="text-uppercase font-weight-bold titles">Locations</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p><a class="footer-links" href="resorts.html">Dubai</a></p>
+                    <p><a class="footer-links" href="resorts.html">London</a></p>
+                    <p><a class="footer-links" href="resorts.html">China</a></p>
+                    <p><a class="footer-links" href="resorts.html">Canada</a></p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 para-margin-remove">
+                    <h6 class="text-uppercase font-weight-bold titles">Useful links</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p><a class="footer-links" href="home.html">Home</a></p>
+                    <p><a class="footer-links" href="resorts.html">Resorts</a></p>
+                    <p><a class="footer-links" href="about-us.html">About Us</a></p>
+                    <p><a class="footer-links" href="contact-us.html">Contact Us</a></p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 para-margin-remove">
+                    <h6 class="text-uppercase font-weight-bold titles">Contact</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p class="footer-text"><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                    <p class="footer-text"><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                    <p class="footer-text"><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                    <p class="footer-text"><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3">© 2018 Copyright
+            <a href="home.html">Ocean Resorts</a>
+        </div>
+    </section>
+    
+    <!--Footer Area End-->
+    <!--JQuery, Bootstrap and more JS Files-->
+    
+    <script type="text/javascript" src="js/aos.js"></script>
+    <script type="text/javascript">
+        AOS.init();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

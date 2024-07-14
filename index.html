@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Ocean Resorts</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/aos.css">
+<body>
+    <video src="videos/video.mp4" autoplay loop muted id="login-bg-video"></video>
+    <div class="filter-bg">
+        <div data-aos="fade-up" class="loginbox">
+            <img data-aos="fade-down" src="images/avatar-login.png" class="avatar">
+            <h1>Login Here</h1>
+            <form action="home.html">
+                <p>Username</p>
+                <input type="text" id="myText" placeholder="Enter Username" required>
+                <p>Password</p>
+                <input type="password" placeholder="Enter Password" required>
+                <input type="submit" onclick="myFunction()" value="Login">
+            </form>
+        </div>
+        <div class="result"></div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myText").value;
+            if (typeof(Storage) !== "undefined") {
+                sessionStorage.setItem("fullname", "Hello! " + x);
+                return false;
+                alert('Welcome ' + x);
+            } else {
+                document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+            }  
+        }
+    </script>
+    <script type="text/javascript" src="js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</head>
+</html>

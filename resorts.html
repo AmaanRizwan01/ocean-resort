@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Resort</title>
+    <link rel="stylesheet" href="css/resorts.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+    <link rel="stylesheet" href="css/aos.css">
+</head>
+<body>
+    <!--Header Start-->
+    <!--Full Screen Navbar Start-->
+    
+    <div class="container-fluid nbar-toggle" id="nav-select">
+        <div class="nav-icon">
+            <div class="lines"></div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <h3 id="result"></h3>
+        <ul>
+            <li><a href="home.html" data-text="Home">Home</a></li>
+            <li><a href="services.html" data-text="Services">Services</a></li>
+            <li><a href="team.html" data-text="Team">Team</a></li>
+            <li><a href="resorts.html" data-text="Resorts">Resorts</a></li>
+            <li><a href="about-us.html" data-text="About">About Us</a></li>
+            <li><a href="contact-us.html" data-text="Contact">Contact Us</a></li>
+        </ul>
+    </div>
+    <!--Full Screen Navbar End-->
+    <!--Header End-->
+    <!--Main Start-->
+
+    <section class="main">
+        <div class="bg-filter">
+            <div data-aos="fade-down" class="title-container">
+                <h2 class="title">Resorts</h2>
+                <a href="home.html">Home</a><span> > </span><span><a href="services.html">Resorts</a></span>
+            </div>
+            <div class="center">
+                <div class="down"></div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="main-content">
+        <div data-aos="fade-right" class="main-title">
+            <h1>Book Your Comfort</h1>
+            <p>The lap of luxury</p>
+        </div>
+        <div data-aos="fade-right" class="category">
+            <h3>Location</h3>
+            <ul class="category-ul">
+                <h3>Locations |</h3>
+                <li><a id="dubai">Duabi</a></li>
+                <li><pre> • </pre></li>
+                <li><a id="london">London</a></li>
+                <li><pre> • </pre></li>
+                <li><a id="china">China</a></li>
+                <li><pre> • </pre></li>
+                <li><a id="canada">Canada</a></li>
+                <li><pre> • </pre></li>
+                <li><a id="egypt">Egypt</a></li>
+                <li><pre> • </pre></li>
+                <li><a id="paris">Paris</a></li>
+            </ul>
+        </div>
+        <div class="paginationTable">
+            <div onclick="a()" class="blog-cards dubai">
+                <div class="blog-card-img">
+                    <a href="book-now.html">
+                        <img src="images/resorts/dubai/img-1.jpg" alt="Dubai Resorts">
+                    </a>
+                </div>
+                <div class="blog-card-details">
+                    <h2 class="card-title"><a id="a" href="book-now.html">Caesars Resort Bluewaters</a></h2>
+                    <a href="book-now.html">Beach &amp; Coast </a><span>•</span><a href="book-now.html"> Dubai</a>
+                    <span class="after-link">• 19 KM from Center • Beach Nearby</span>
+                    <p class="desc">600 metres from Dubai Marina Mall, Caesars Resort Bluewaters is situated in Dubai and features access to a private beach.</p>
+                    <div class="blog-card-bottom">
+                        <a href="book-now.html" class="price-button price-a">
+                            <span class="snake-span1"></span>
+                            <span class="snake-span2"></span>
+                            <span class="snake-span3"></span>
+                            <span class="snake-span4"></span>
+                            Show Price
+                        </a>
+                        <div class="rate">
+                            <h5 class="rate-rev">Superb <span>683 reviews</span></h5>
+                            <a class="rating price-a">
+                                <span class="snake-span1"></span>
+                                <span class="snake-span2"></span>
+                                <span class="snake-span3"></span>
+                                <span class="snake-span4"></span>
+                                9.3
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div onclick="b()" class="blog-cards paris">
+                <div class="blog-card-img">
+                    <a href="book-now.html">
+                        <img src="images/resorts/paris/img-1.jpg" alt="Paris Resorts">
+                    </a>
+                </div>
+                <div class="blog-card-details">
+                    <h2 class="card-title"><a id="b" href="book-now.html">Camping de Paris</a></h2>
+                    <a href="book-now.html">16th arr </a><span>•</span><a href="book-now.html"> Paris</a>
+                    <span class="after-link">• 8 KM from Center</span>
+                    <p class="desc">Camping de Paris is located on a 7-hectare park in Paris, on the banks of the River Seine beside the Bois de Boulogne. It offers wooden caravans and cottages with a covered furnished terrace.</p>
+                    <div class="blog-card-bottom">
+                        <a href="book-now.html" class="price-button price-a">
+                            <span class="snake-span1"></span>
+                            <span class="snake-span2"></span>
+                            <span class="snake-span3"></span>
+                            <span class="snake-span4"></span>
+                            Show Price
+                        </a>
+                        <div class="rate">
+                            <h5 class="rate-rev">Superb <span>873 reviews</span></h5>
+                            <a class="rating price-a">
+                                <span class="snake-span1"></span>
+                                <span class="snake-span2"></span>
+                                <span class="snake-span3"></span>
+                                <span class="snake-span4"></span>
+                                9.6
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div onclick="c()" class="blog-cards egypt">
+                <div class="blog-card-img">
+                    <a href="book-now.html">
+                        <img src="images/resorts/egypt/img-1.jpg" alt="Egypt Resorts">
+                    </a>
+                </div>
+                <div class="blog-card-details">
+                    <h2 class="card-title"><a id="c" href="book-now.html">Six Corners Resort</a></h2>
+                    <a href="book-now.html">Abū Sulţān </a><span>•</span><a href="book-now.html"> Egypt</a>
+                    <span class="after-link">• 19 KM from Center • Beach Nearby</span>
+                    <p class="desc">Situated on the Bitter lakes in Abu sultan 15 minutes away from Ismailia, Six Corners Resort Fayed features a traditional Arabic décor. It offers a landscaped pool area and a private beach area.</p>
+                    <div class="blog-card-bottom">
+                        <a href="book-now.html" class="price-button price-a">
+                            <span class="snake-span1"></span>
+                            <span class="snake-span2"></span>
+                            <span class="snake-span3"></span>
+                            <span class="snake-span4"></span>
+                            Show Price
+                        </a>
+                        <div class="rate">
+                            <h5 class="rate-rev">Good <span>2,456 reviews</span></h5>
+                            <a class="rating price-a">
+                                <span class="snake-span1"></span>
+                                <span class="snake-span2"></span>
+                                <span class="snake-span3"></span>
+                                <span class="snake-span4"></span>
+                                7.2
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div onclick="d()" class="blog-cards london">
+                <div class="blog-card-img">
+                    <a href="book-now.html">
+                        <img src="images/resorts/london/img-1.jpg" alt="London Resorts">
+                    </a>
+                </div>
+                <div class="blog-card-details">
+                    <h2 class="card-title"><a id="d" href="book-now.html">Beautiful Notting Hill Garden Resorts</a></h2>
+                    <a href="book-now.html">Kensington and Chelsea </a><span>•</span><a href="book-now.html"> London</a>
+                    <span class="after-link">• 5 km from centre • Metro accessy</span>
+                    <p class="desc">Beautiful Notting Hill Garden Resorts is set in London, 700 metres from Portobello Road Market, and offers a patio, garden, and free WiFi.</p>
+                    <div class="blog-card-bottom">
+                        <a href="book-now.html" class="price-button price-a">
+                            <span class="snake-span1"></span>
+                            <span class="snake-span2"></span>
+                            <span class="snake-span3"></span>
+                            <span class="snake-span4"></span>
+                            Show Price
+                        </a>
+                        <div class="rate">
+                            <h5 class="rate-rev">Superb <span>788 reviews</span></h5>
+                            <a class="rating price-a">
+                                <span class="snake-span1"></span>
+                                <span class="snake-span2"></span>
+                                <span class="snake-span3"></span>
+                                <span class="snake-span4"></span>
+                                9.5
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div onclick="e()" class="blog-cards paris">
+                <div class="blog-card-img">
+                    <a href="book-now.html">
+                        <img src="images/resorts/paris/img-2.jpg" alt="Paris Resorts">
+                    </a>
+                </div>
+                <div class="blog-card-details">
+                    <h2 class="card-title"><a id="e" href="book-now.html">Hotel Monsieur Helder</a></h2>
+                    <a href="book-now.html">9th arr </a><span>•</span><a href="book-now.html"> Paris</a>
+                    <span class="after-link">• 2 km from centre • Metro access</span>
+                    <p class="desc">Hotel Monsieur Helder is located in central Paris, 230 metres from Opéra Garnier, the Galeries Lafayette and Opera Metro Station, which gives direct access to Chatelet and the Eiffel Tower.</p>
+                    <div class="blog-card-bottom">
+                        <a href="book-now.html" class="price-button price-a">
+                            <span class="snake-span1"></span>
+                            <span class="snake-span2"></span>
+                            <span class="snake-span3"></span>
+                            <span class="snake-span4"></span>
+                            Show Price
+                        </a>
+                        <div class="rate">
+                            <h5 class="rate-rev">Superb <span>945 reviews</span></h5>
+                            <a class="rating price-a">
+                                <span class="snake-span1"></span>
+                                <span class="snake-span2"></span>
+                                <span class="snake-span3"></span>
+                                <span class="snake-span4"></span>
+                                9.1
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div onclick="f()" class="blog-cards egypt">
+                <div class="blog-card-img">
+                    <a href="book-now.html">
+                        <img src="images/resorts/egypt/img-2.jpg" alt="Egypt Resorts">
+                    </a>
+                </div>
+                <div class="blog-card-details">
+                    <h2 class="card-title"><a id="f" href="book-now.html">Coral Resort Nuweiba</a></h2>
+                    <a href="book-now.html">Nuweiba </a><span>•</span><a href="book-now.html"> Egypt</a>
+                    <span class="after-link">• 8 KM from Center • Beach Nearby</span>
+                    <p class="desc">Overlooking the beautiful Gulf of Aqaba, this 4-star resort features luscious gardens of flowers and palms and an extended private sandy beach on the Red Sea. The resort has 3 restaurants and bars.</p>
+                    <div class="blog-card-bottom">
+                        <a href="book-now.html" class="price-button price-a">
+                            <span class="snake-span1"></span>
+                            <span class="snake-span2"></span>
+                            <span class="snake-span3"></span>
+                            <span class="snake-span4"></span>
+                            Show Price
+                        </a>
+                        <div class="rate">
+                            <h5 class="rate-rev">Superb <span>350 reviews</span></h5>
+                            <a class="rating price-a">
+                                <span class="snake-span1"></span>
+                                <span class="snake-span2"></span>
+                                <span class="snake-span3"></span>
+                                <span class="snake-span4"></span>
+                                9.8
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div onclick="g()" class="blog-cards london">
+                <div class="blog-card-img">
+                    <a href="book-now.html">
+                        <img src="images/resorts/london/img-2.jpg" alt="London Resorts">
+                    </a>
+                </div>
+                <div class="blog-card-details">
+                    <h2 class="card-title"><a id="g" href="book-now.html">Hyde Park Economy Resorts</a></h2>
+                    <a href="book-now.html">Westminster Borough </a><span>•</span><a href="book-now.html"> London</a>
+                    <span class="after-link">• 4.1 km from centre • Metro access</span>
+                    <p class="desc">Hyde Park Economy Apartments offers self-catering accommodation just 150 metres from central London's leafy Hyde Park. Queensway Tube Station is just 2 minutes' walk away.</p>
+                    <div class="blog-card-bottom">
+                        <a href="book-now.html" class="price-button price-a">
+                            <span class="snake-span1"></span>
+                            <span class="snake-span2"></span>
+                            <span class="snake-span3"></span>
+                            <span class="snake-span4"></span>
+                            Show Price
+                        </a>
+                        <div class="rate">
+                            <h5 class="rate-rev">Superb <span>985 reviews</span></h5>
+                            <a class="rating price-a">
+                                <span class="snake-span1"></span>
+                                <span class="snake-span2"></span>
+                                <span class="snake-span3"></span>
+                                <span class="snake-span4"></span>
+                                9.2
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div onclick="h()" class="blog-cards paris">
+                <div class="blog-card-img">
+                    <a href="book-now.html">
+                        <img src="images/resorts/paris/img-3.jpg" alt="Paris Resorts">
+                    </a>
+                </div>
+                <div class="blog-card-details">
+                    <h2 class="card-title"><a id="h" href="book-now.html">Hotel Fontaines du Luxembourg</a></h2>
+                    <a href="book-now.html">6th arr </a><span>•</span><a href="book-now.html"> Paris</a>
+                    <span class="after-link">• 1.2 km from centre • Metro access</span>
+                    <p class="desc">Hotel Fontaines du Luxembourg is located in central Paris, 110 metres from Luxembourg gardens and the Senate of France. This designer hotel offers stylish rooms with period artworks.</p>
+                    <div class="blog-card-bottom">
+                        <a href="book-now.html" class="price-button price-a">
+                            <span class="snake-span1"></span>
+                            <span class="snake-span2"></span>
+                            <span class="snake-span3"></span>
+                            <span class="snake-span4"></span>
+                            Show Price
+                        </a>
+                        <div class="rate">
+                            <h5 class="rate-rev">Superb <span>5,458 reviews</span></h5>
+                            <a class="rating price-a">
+                                <span class="snake-span1"></span>
+                                <span class="snake-span2"></span>
+                                <span class="snake-span3"></span>
+                                <span class="snake-span4"></span>
+                                9.8
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div onclick="i()" class="blog-cards dubai">
+                <div class="blog-card-img">
+                    <a href="book-now.html">
+                        <img src="images/resorts/dubai/img-2.jpg" alt="Dubai Resorts">
+                    </a>
+                </div>
+                <div class="blog-card-details">
+                    <h2 class="card-title"><a id="i" href="book-now.html">Dubai Marine Beach Resort &amp; Spa</a></h2>
+                    <a href="book-now.html">Jumeirah </a><span>•</span><a href="book-now.html"> Dubai</a>
+                    <span class="after-link">• 4.4 km from centre • Beach nearby</span>
+                    <p class="desc">Located beside La Mer in Jumeirah 1 and 10 minutes walking distance from Laguna Waterpark, Dubai Marine Beach Resort boasts a private beach front, features 3 swimming pools and 14 dining and...</p>
+                    <div class="blog-card-bottom">
+                        <a href="book-now.html" class="price-button price-a">
+                            <span class="snake-span1"></span>
+                            <span class="snake-span2"></span>
+                            <span class="snake-span3"></span>
+                            <span class="snake-span4"></span>
+                            Show Price
+                        </a>
+                        <div class="rate">
+                            <h5 class="rate-rev">Good <span>3,109 reviews</span></h5>
+                            <a class="rating price-a">
+                                <span class="snake-span1"></span>
+                                <span class="snake-span2"></span>
+                                <span class="snake-span3"></span>
+                                <span class="snake-span4"></span>
+                                7.9
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div onclick="j()" class="blog-cards china">
+                <div class="blog-card-img">
+                    <a href="book-now.html">
+                        <img src="images/resorts/china/img-1.jpg" alt="China Resorts">
+                    </a>
+                </div>
+                <div class="blog-card-details">
+                    <h2 class="card-title"><a id="j" href="book-now.html">Dreamworld Resort, Hotel &amp; Golf Course</a></h2>
+                    <a href="book-now.html">China</a>
+                    <span class="after-link">• 15 km from centre</span>
+                    <p class="desc">Located in suburban China just 20 minutes ride from the Jinnah International Airport the 5 Star Dreamworld Resort, Hotel & Golf Course offers luxurious rooms with flat screens (in some rooms more...</p>
+                    <div class="blog-card-bottom">
+                        <a href="book-now.html" class="price-button price-a">
+                            <span class="snake-span1"></span>
+                            <span class="snake-span2"></span>
+                            <span class="snake-span3"></span>
+                            <span class="snake-span4"></span>
+                            Show Price
+                        </a>
+                        <div class="rate">
+                            <h5 class="rate-rev">Superb <span>1,569 reviews</span></h5>
+                            <a class="rating price-a">
+                                <span class="snake-span1"></span>
+                                <span class="snake-span2"></span>
+                                <span class="snake-span3"></span>
+                                <span class="snake-span4"></span>
+                                9.8
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div onclick="k()" class="blog-cards egypt">
+                <div class="blog-card-img">
+                    <a href="book-now.html">
+                        <img src="images/resorts/egypt/img-3.jpg" alt="Egypt Resorts">
+                    </a>
+                </div>
+                <div class="blog-card-details">
+                    <h2 class="card-title"><a id="k" href="book-now.html">Jaz Oriental Resort - Almaza Bay</a></h2>
+                    <a href="book-now.html">Marsa Matruh </a><span>•</span><a href="book-now.html"> Egypt</a>
+                    <p class="desc">Featuring a private area of white sandy beach on Almaza Bay, overlooking the Mediterranean Sea, this 5-star resort offers spacious rooms with furnished balconies.</p>
+                    <div class="blog-card-bottom">
+                        <a href="book-now.html" class="price-button price-a">
+                            <span class="snake-span1"></span>
+                            <span class="snake-span2"></span>
+                            <span class="snake-span3"></span>
+                            <span class="snake-span4"></span>
+                            Show Price
+                        </a>
+                        <div class="rate">
+                            <h5 class="rate-rev">Superb <span>446 reviews</span></h5>
+                            <a class="rating price-a">
+                                <span class="snake-span1"></span>
+                                <span class="snake-span2"></span>
+                                <span class="snake-span3"></span>
+                                <span class="snake-span4"></span>
+                                9.0
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div onclick="l()" class="blog-cards london">
+                <div class="blog-card-img">
+                    <a href="book-now.html">
+                        <img src="images/resorts/london/img-3.jpg" alt="London Resorts">
+                    </a>
+                </div>
+                <div class="blog-card-details">
+                    <h2 class="card-title"><a id="l" href="book-now.html">LEO Nova North Resorts</a></h2>
+                    <a href="book-now.html">Westminster Borough </a><span>•</span><a href="book-now.html"> London</a>
+                    <span class="after-link">• 4.2 km from centre • Metro access</span>
+                    <p class="desc">Set in London, LEO Nova North Resorts has well-equipped accommodation featuring free WiFi, a 15-minute walk from Portobello Road Market and 1.4 km from Hyde Park.</p>
+                    <div class="blog-card-bottom">
+                        <a href="book-now.html" class="price-button price-a">
+                            <span class="snake-span1"></span>
+                            <span class="snake-span2"></span>
+                            <span class="snake-span3"></span>
+                            <span class="snake-span4"></span>
+                            Show Price
+                        </a>
+                        <div class="rate">
+                            <h5 class="rate-rev">Superb <span>152 reviews</span></h5>
+                            <a class="rating price-a">
+                                <span class="snake-span1"></span>
+                                <span class="snake-span2"></span>
+                                <span class="snake-span3"></span>
+                                <span class="snake-span4"></span>
+                                9.0
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div onclick="m()" class="blog-cards canada">
+                <div class="blog-card-img">
+                    <a href="book-now.html">
+                        <img src="images/resorts/canada/img-1.jpg" alt="Canada Resorts">
+                    </a>
+                </div>
+                <div class="blog-card-details">
+                    <h2 class="card-title"><a id="m" href="book-now.html">Terracana Ranch Resort</a></h2>
+                    <a href="book-now.html">Tete Jaune Cache </a><span>•</span><a href="book-now.html"> Canada</a>
+                    <p class="desc">Situated on a scenic ranch, this Valemount resort features Rocky Mountain and Fraser River views. A patio and BBQ facilities are offered in all suites. Valemount village is 33 km away.</p>
+                    <div class="blog-card-bottom">
+                        <a href="book-now.html" class="price-button price-a">
+                            <span class="snake-span1"></span>
+                            <span class="snake-span2"></span>
+                            <span class="snake-span3"></span>
+                            <span class="snake-span4"></span>
+                            Show Price
+                        </a>
+                        <div class="rate">
+                            <h5 class="rate-rev">Superb <span>5,458 reviews</span></h5>
+                            <a class="rating price-a">
+                                <span class="snake-span1"></span>
+                                <span class="snake-span2"></span>
+                                <span class="snake-span3"></span>
+                                <span class="snake-span4"></span>
+                                9.2
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div onclick="n()" class="blog-cards china">
+                <div class="blog-card-img">
+                    <a href="book-now.html">
+                        <img src="images/resorts/china/img-2.jpg" alt="China Resorts">
+                    </a>
+                </div>
+                <div class="blog-card-details">
+                    <h2 class="card-title"><a id="n" href="book-now.html">Le Méridien Shimei Bay Beach Resort &amp; Spa</a></h2>
+                    <a href="book-now.html">Wanning </a><span>•</span><a href="book-now.html"> China</a>
+                    <span class="after-link">• 0.5 km from centre</span>
+                    <p class="desc">Le Méridien Shimei Bay Beach Resort &amp; Spa enjoys a quiet location on Shimei Bay, and is surrounded by sandy beaches and tropical greenery.</p>
+                    <div class="blog-card-bottom">
+                        <a href="book-now.html" class="price-button price-a">
+                            <span class="snake-span1"></span>
+                            <span class="snake-span2"></span>
+                            <span class="snake-span3"></span>
+                            <span class="snake-span4"></span>
+                            Show Price
+                        </a>
+                        <div class="rate">
+                            <h5 class="rate-rev">Superb <span>146 reviews</span></h5>
+                            <a class="rating price-a">
+                                <span class="snake-span1"></span>
+                                <span class="snake-span2"></span>
+                                <span class="snake-span3"></span>
+                                <span class="snake-span4"></span>
+                                9.1
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div onclick="o()" class="blog-cards china">
+                <div class="blog-card-img">
+                    <a href="book-now.html">
+                        <img src="images/resorts/china/img-3.jpg" alt="China Resorts">
+                    </a>
+                </div>
+                <div class="blog-card-details">
+                    <h2 class="card-title"><a id="o" href="book-now.html">The Westin Xi'an</a></h2>
+                    <a href="book-now.html">Yanta, Xi'an </a><span>•</span><a href="book-now.html"> China</a>
+                    <span class="after-link">• 16 km from centre</span>
+                    <p class="desc">Boasting an on-site Chinese museum with over 2000 artifacts, The Westin Xian offers a luxurious getaway in one of the major ancient cities of the world - Xi'an.</p>
+                    <div class="blog-card-bottom">
+                        <a href="book-now.html" class="price-button price-a">
+                            <span class="snake-span1"></span>
+                            <span class="snake-span2"></span>
+                            <span class="snake-span3"></span>
+                            <span class="snake-span4"></span>
+                            Show Price
+                        </a>
+                        <div class="rate">
+                            <h5 class="rate-rev">Superb <span>220 reviews</span></h5>
+                            <a class="rating price-a">
+                                <span class="snake-span1"></span>
+                                <span class="snake-span2"></span>
+                                <span class="snake-span3"></span>
+                                <span class="snake-span4"></span>
+                                10
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div onclick="p()" class="blog-cards canada">
+                <div class="blog-card-img">
+                    <a href="book-now.html">
+                        <img src="images/resorts/canada/img-2.jpg" alt="Canada Resorts">
+                    </a>
+                </div>
+                <div class="blog-card-details">
+                    <h2 class="card-title"><a id="p" href="book-now.html">Whispering Pines Resort</a></h2>
+                    <a href="book-now.html">Canada</a>
+                    <span class="after-link">• 10 KM from Center</span>
+                    <p class="desc">Featuring a garden, terrace and views of city, Whispering Pines Resort is set in Canada, 21 km from Shah Faisal Mosque.</p>
+                    <div class="blog-card-bottom">
+                        <a href="book-now.html" class="price-button price-a">
+                            <span class="snake-span1"></span>
+                            <span class="snake-span2"></span>
+                            <span class="snake-span3"></span>
+                            <span class="snake-span4"></span>
+                            Show Price
+                        </a>
+                        <div class="rate">
+                            <h5 class="rate-rev">Superb <span>354 reviews</span></h5>
+                            <a class="rating price-a">
+                                <span class="snake-span1"></span>
+                                <span class="snake-span2"></span>
+                                <span class="snake-span3"></span>
+                                <span class="snake-span4"></span>
+                                9.0
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div onclick="q()" class="blog-cards dubai">
+                <div class="blog-card-img">
+                    <a href="book-now.html">
+                        <img src="images/resorts/dubai/img-3.jpg" alt="Dubai Resorts">
+                    </a>
+                </div>
+                <div class="blog-card-details">
+                    <h2 class="card-title"><a id="q" href="book-now.html">Caesars Palace Bluewaters Dubai</a></h2>
+                    <a href="book-now.html">Beach and Coast </a><span>•</span><a href="book-now.html"> Dubai</a>
+                    <span class="after-link">• 19 KM from Center • Beach Nearby</span>
+                    <p class="desc">Situated in Dubai, 9.6km from Dubai Marina Mall, Caesars Palace Bluewaters Dubai has a number of amenities including a private beach area, an outdoor swimming pool, a fitness centre and free WiFi.</p>
+                    <div class="blog-card-bottom">
+                        <a href="book-now.html" class="price-button price-a">
+                            <span class="snake-span1"></span>
+                            <span class="snake-span2"></span>
+                            <span class="snake-span3"></span>
+                            <span class="snake-span4"></span>
+                            Show Price
+                        </a>
+                        <div class="rate">
+                            <h5 class="rate-rev">Superb <span>330 reviews</span></h5>
+                            <a class="rating price-a">
+                                <span class="snake-span1"></span>
+                                <span class="snake-span2"></span>
+                                <span class="snake-span3"></span>
+                                <span class="snake-span4"></span>
+                                9.3
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div onclick="r()" class="blog-cards canada">
+                <div class="blog-card-img">
+                    <a href="book-now.html">
+                        <img src="images/resorts/canada/img-3.jpg" alt="Canada Resorts">
+                    </a>
+                </div>
+                <div class="blog-card-details">
+                    <h2 class="card-title"><a id="r" href="book-now.html">Brentwood Bay Resort &amp; Spa</a></h2>
+                    <a href="book-now.html">Brentwood Bay </a><span>•</span><a href="book-now.html"> Canada</a>
+                    <p class="desc">Nestled along Brentwood Bay, near Victoria, British Columbia. This luxurious resort offers an on-site marina. The resort also features a full-service spa and rooms provide ocean views and free WiFi.</p>
+                    <div class="blog-card-bottom">
+                        <a href="book-now.html" class="price-button price-a">
+                            <span class="snake-span1"></span>
+                            <span class="snake-span2"></span>
+                            <span class="snake-span3"></span>
+                            <span class="snake-span4"></span>
+                            Show Price
+                        </a>
+                        <div class="rate">
+                            <h5 class="rate-rev">Superb <span>307 reviews</span></h5>
+                            <a class="rating price-a">
+                                <span class="snake-span1"></span>
+                                <span class="snake-span2"></span>
+                                <span class="snake-span3"></span>
+                                <span class="snake-span4"></span>
+                                9.4
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="myCustonPag">
+            <div id="pagination-container">
+                <p class='paginacaoCursor' id="beforePagination"> Prev </p>
+                <p class='paginacaoCursor' id="afterPagination"> Next </p>
+            </div>
+        </div>
+    </section>
+    
+    <!--Main Content End-->
+    <!--Footer Area Start-->
+
+    <section class="page-footer font-small unique-color-dark">
+        <div style="background-color: #0e0923;">
+            <div class="container">
+                <div class="row py-4 d-flex align-items-center">
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0">Get connected with us on social networks!</h6>
+                    </div>
+                    <div class="col-md-6 col-lg-7 text-center text-md-right social-icons">
+                        <a class="fb-ic">
+                            <i class="fab fa-facebook-f white-text mr-4"> </i>
+                        </a>
+                        <a class="tw-ic">
+                            <i class="fab fa-twitter white-text mr-4"> </i>
+                        </a>
+                        <a class="gplus-ic">
+                            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+                        </a>
+                        <a class="li-ic">
+                            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                        </a>
+                        <a class="ins-ic">
+                            <i class="fab fa-instagram white-text"> </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center text-md-left mt-5">
+            <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 para-margin-remove">
+                    <h6 class="text-uppercase font-weight-bold titles">Ocean Resorts</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p class="footer-text">Here you can book resorts &amp; hotels for your vacations and business trips.</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 para-margin-remove">
+                    <h6 class="text-uppercase font-weight-bold titles">Locations</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p><a class="footer-links" href="resorts.html">Dubai</a></p>
+                    <p><a class="footer-links" href="resorts.html">London</a></p>
+                    <p><a class="footer-links" href="resorts.html">China</a></p>
+                    <p><a class="footer-links" href="resorts.html">Canada</a></p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 para-margin-remove">
+                    <h6 class="text-uppercase font-weight-bold titles">Useful links</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p><a class="footer-links" href="home.html">Home</a></p>
+                    <p><a class="footer-links" href="resorts.html">Resorts</a></p>
+                    <p><a class="footer-links" href="about-us.html">About Us</a></p>
+                    <p><a class="footer-links" href="contact-us.html">Contact Us</a></p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 para-margin-remove">
+                    <h6 class="text-uppercase font-weight-bold titles">Contact</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p class="footer-text"><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                    <p class="footer-text"><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                    <p class="footer-text"><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                    <p class="footer-text"><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3">© 2018 Copyright
+            <a href="home.html">Ocean Resorts</a>
+        </div>
+    </section>
+    
+    <!--Footer Area End-->
+    <!--JQuery, Bootstrap and more JS Files-->
+
+    <script type="text/javascript" src="js/aos.js"></script>
+    <script type="text/javascript">
+        AOS.init();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
