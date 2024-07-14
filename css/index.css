@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    background-color: #1f1917;
+}
+
+#login-bg-video{
+    width: 100%;
+    position: absolute;
+}
+
+.filter-bg{
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.loginbox{
+    width: 320px;
+    height: 350px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    top: 25%;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 70px 30px;
+    box-shadow: 0px 0px 20px #000;
+}
+
+@media (min-width: 1100px){
+    .loginbox{
+        left: 39%;
+    }
+}
+
+@media (max-width: 1099px) and (min-width: 900px){
+    .loginbox{
+        left: 35%;
+    }
+}
+
+@media (max-width: 899px) and (min-width: 650px){
+    .loginbox{
+        left: 30%;
+    }
+}
+
+@media (max-width: 649px){
+    .loginbox{
+        left: 28%;
+    }
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.loginbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.loginbox input[type="submit"]:hover{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.loginbox a:hover{
+    color: #ffc107;
+}

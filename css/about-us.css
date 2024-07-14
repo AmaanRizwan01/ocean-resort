@@ -1,0 +1,304 @@
+.title{
+    font-weight: 700;
+    margin: 0px !important;
+    font-size: 5em;
+}
+
+.main{
+    padding: 0px;
+    margin: 0px;
+    background-image: url(../images/about_banner.jpg);
+    background-size: cover;
+	background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title{
+    text-shadow: 0px 3px 5px #000;
+    pointer-events: none;
+}
+
+.title-container a{
+    color: #fff;
+    text-decoration: none !important;
+    font-weight: bold;
+    text-shadow: 0px 3px 5px #000;
+}
+
+.title-container a:hover{
+    color: #ffeb3b
+}
+
+.title-container span{
+    font-weight: bold;
+    text-shadow: 0px 3px 5px #000;
+    pointer-events: none;
+}
+
+.title-container span > a{
+    pointer-events: auto;
+}
+
+
+/*-----================ About History Area  =================----*/
+
+.section_gap {
+    padding: 120px 0;
+}
+
+.title1
+{
+	font-size: 36px;
+    line-height: 45px;
+    font-weight: 600;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+}
+
+.button_hover:hover {
+    color: #fff;
+}
+a:hover, a:focus {
+    text-decoration: none;
+    outline: none;
+}
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+.theme_btn_two {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+    background: #222222;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 5px 29px;
+}
+.button_hover {
+    border-radius: 0px;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    overflow: hidden;
+    border: 0px;
+    display: inline-block;
+    text-align: center;
+}
+.button_hover:hover:before {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+}
+.button_hover:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    z-index: -1;
+    background: #f8b100;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    opacity: 0;
+}
+.about_content{
+    padding-right: 60px;
+}
+/*-----================ About History Area  =================----*/
+/*================ Facilities Area  =================*/
+
+.facilities_area {
+    background-image:url(../images/facilites_bg.jpg);
+	background-repeat: no-repeat ;
+	background-attachment:scroll ;
+	background-position:center ;
+	background-size:cover;
+	position:relative;
+}
+
+
+h5{
+    font-size: 24px;
+    line-height: 28px;
+    color: $light_blue;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.sec_h4{
+    color: #fff;
+    font-size: 18px;
+    line-height: 38px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+
+
+/*=========== Start facilities_area css =============*/
+
+.facilities_area{
+    position: relative;
+    z-index: 1;
+    background: rgba(14, 9, 35, 1);
+    overflow: hidden;
+}
+.facilities_item > p {
+    color: rgba(255, 255, 255, 0.7);
+}
+.facilities_item{
+    background-color: transparent;
+    padding: 31px 40px 37px;
+    box-shadow: 0px 0px 50px #000;
+    color: #fff;
+    margin-bottom: 30px;
+}
+ .iconn{
+    color: #FC6;
+    font-size: 24px;
+    line-height: 38px;
+    display: inline-block;
+    vertical-align: bottom;
+    padding-right: 20px;
+}
+
+a:hover{
+    text-decoration:none !important;
+}
+		
+		.title_w {
+    color: #fff;
+	font-size: 36px;
+    line-height: 45px;
+    font-weight: 600;
+}
+
+.section_title p {
+    font-size: 14px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0px;
+}
+
+.gallery_item{
+    margin-bottom: 30px;
+}
+
+
+
+/*=========== End facilities_area css =============*/
+
+
+
+ /*--================ Testimonial Area  =================*/
+.testimonial_area {
+    background: #0e0923;
+}
+
+.testimonial_slider .testimonial_item {
+    background: #0e0923;
+    padding: 40px;
+}
+
+.testimonial_slider .testimonial_item img {
+    width: auto;
+    margin-right: 30px;
+}
+
+.testimonial_slider .testimonial_item p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0px;
+    padding-bottom: 15px;
+}
+
+.testimonial_slider .testimonial_item .sec_h4:hover {
+    color: #52c5fd;
+}
+
+.testimonial_slider .testimonial_item .star a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+body {
+    line-height: 24px;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: #777777;
+}
+h2.title_color
+{
+	color:#fff;
+	font:36px poppins,sans-serif ;
+	margin:0px ,0px ,8px;
+	font-weight:600;
+}
+
+ /*--================ Testimonial Area  =================*/
+
+.img1{
+    background-image: url(../images/about_bg1.jpg);
+}
+
+.button-container > a{
+    color: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* All Media Queries Start */
+
+@media (min-width: 989px){
+    .bg-filter{
+        height: 60vh !important;
+    }
+    .title-container{
+        position: absolute;
+        top: 130px !important;
+        right: 0;
+        left: 0;
+        text-align: center;
+        justify-content: center;
+        height: 18%;
+        margin: auto;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .center{
+        opacity: 0;
+    }
+}
+
+@media (max-width: 988px){
+    .bg-filter{
+        height: 100vh !important;
+    }
+    .title-container{
+        position: absolute;
+        top: 170px !important;
+        right: 0;
+        left: 0;
+        text-align: center;
+        justify-content: center;
+        height: 18%;
+        margin: auto;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .center{
+        opacity: 1;
+    }
+}
+
+/* All Media Queries End */

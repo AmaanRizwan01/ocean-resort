@@ -1,0 +1,663 @@
+/* Scroll bar Start */
+
+::-webkit-scrollbar{
+    width: 8px;
+    padding: 5px;
+}
+
+::-webkit-scrollbar-button{
+    display: none !important;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgba(14, 9, 35, 1);
+    height: 200px;
+}
+
+::-webkit-scrollbar-thumb:active{
+    background: #181620;
+}
+
+::-webkit-scrollbar-track{
+    background: rgba(20, 19, 19, 0.75);
+}
+
+/* Scroll bat End */
+/*Full Screen Navbar Start*/
+
+.container-fluid{
+    margin: 0px !important;
+    padding: 0px !important;
+    background-color: #141313;
+    box-shadow: none;
+    z-index: 1000;
+}
+
+.nbar-toggle{
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.nav-icon{
+    margin: 1em;
+    position: relative;
+    width: 65px;
+    padding: 20px;
+    z-index: 10;
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+	cursor:pointer;
+}
+
+.ham-fix{
+    position: fixed !important;
+    top: 0;
+}
+
+.nav-icon:after, .nav-icon:before, .nav-icon .lines{
+    background-color: #fff;
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5px;
+    margin: 5px 0;
+    padding-top: 5px;
+    transition: all .2s ease-in-out;
+    z-index: 10;
+}
+
+.nav-icon.active:before{
+    transform: translateY(12px) rotate(135deg);
+    background-color: #fff;
+}
+
+.nav-icon.active:after{
+    transform: translateY(-12px) rotate(-135deg);
+    background-color: #fff;
+}
+
+.nav-icon.active .lines{
+    transform: scale(0);
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(14,9,35,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    z-index: 8;
+}
+
+.sidebar.active{
+    left: 0%;
+}
+
+.sidebar > ul{
+    position: relative;
+}
+
+.sidebar > ul li{
+    list-style: none;
+    text-align: center;
+}
+
+.sidebar > ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2em;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+
+.sidebar > ul li a:hover{
+    text-decoration: none;
+    color: #ffeb3b;
+}
+
+.sidebar > ul li a:before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    font-size: 6em;
+    opacity: 0;
+    pointer-events: none;
+    z-index: -1;
+    font-family: initial;
+}
+
+.sidebar > ul li a:hover:before{
+    opacity: 0.1;
+    top: 50%;
+}
+
+.sidebar h3{
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*Full Screen Navbar End*/
+/* Essentials */
+
+.bg-filter{
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100vh;
+}
+
+/* Button Start */
+
+.book-now-btn{
+    position: relative;
+    padding: 20px 30px;
+    text-decoration: none !important;
+    color: #fff !important;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.7);
+}
+
+.book-now-btn:after{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4),transparent);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.book-now-btn:hover:after{
+    left: 100%;
+}
+
+.book-now-btn span{
+    position: absolute;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.book-now-btn span:nth-child(1){
+    top: 0%;
+    left: 0%;
+    width: 0px;
+    height: 1px;
+    background-color: #fff;
+}
+
+.book-now-btn:hover span:nth-child(1){
+    width: 100%;
+    transform: translateX(100%);
+}
+
+.book-now-btn span:nth-child(3){
+    bottom: 0%;
+    right: 0%;
+    width: 0px;
+    height: 1px;
+    background-color: #fff;
+}
+
+.book-now-btn:hover span:nth-child(3){
+    width: 100%;
+    transform: translateX(-100%);
+}
+
+.book-now-btn span:nth-child(2){
+    top: 0%;
+    left: 0%;
+    width: 1px;
+    height: 0px;
+    background-color: #fff;
+}
+
+.book-now-btn:hover span:nth-child(2){
+    height: 100%;
+    transform: translateY(100%);
+}
+
+.book-now-btn span:nth-child(4){
+    bottom: 0%;
+    right: 0%;
+    width: 1px;
+    height: 0px;
+    background-color: #fff;
+}
+
+.book-now-btn:hover span:nth-child(4){
+    height: 100%;
+    transform: translateY(-100%);
+}
+
+.book-now-btn{
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 240px;
+    height: 70px;
+}
+
+/* Button End */
+/* Scroll Down Indecator Start */
+
+.content1{
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    height: 18%;
+    margin: auto;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.center{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.down{
+    position: relative;
+    width: 30px;
+    height: 50px;
+    border-radius: 25px;
+    background: transparent;
+    border: 3px solid #fff;
+    overflow: hidden;
+    
+}
+
+.down:before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    left: 50%;
+    top: 10px;
+    transform: translate(-50%, 0%);
+    animation: animate 1s linear infinite;
+}
+
+.down:after{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    left: 50%;
+    top: 5px;
+    transform: translate(-50%, 0%);
+    border-radius: 3px;
+}
+
+@keyframes animate{
+    0%{
+        transform: translate(-50%, 5px);
+        opacity: 0;
+    }
+    80%{
+        transform: translate(-50%, 30px);
+        opacity: 1;
+    }
+    100%{
+        transform: translate(-50%, 60px);
+        opacity: 0;
+    }
+}
+
+/* Scroll Down Indecator End */
+/* Image with Details */
+
+.img1{
+    width: 70%;
+    height: 535px;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.img-details{
+    width: 30%;
+    background: #0e0923e0;
+    float: right;
+    position: relative;
+    z-index: 1;
+    height: 535px;
+    padding: 100px 60px;
+}
+
+.about-1{
+    display: flex;
+    overflow: hidden;
+}
+
+.img-details > h2{
+    margin-bottom: 30px;
+    font-weight: 100;
+    font-size: 33px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.img-details > h2 > strong{
+    color: #fff;
+}
+
+.img-details > p{
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 28px;
+}
+
+.panel-button{
+    text-align: center;
+    color: #000 !important;
+    width: 100%;
+    height: 60px;
+    margin-top: 250px;
+    justify-content: center;
+}
+
+.button-container{
+    line-height: 65px;
+    transition-duration: 0.5s;
+}
+
+.button-container > a{
+    background: rgba(255, 255, 255, 0.8);
+    color: rgba(0, 0, 0, 0.5) !important;
+    text-decoration: none !important;
+    font-weight: 100;
+    font-size: 20px;
+    padding: 23px 27px;
+    transition-duration: 0.5s;
+}
+
+.button-container > a:hover{
+    padding: 23px 50px;
+    background: #fff;
+}
+
+/* Numbers Input Start */
+
+.quantity{
+    position: relative;
+    margin: 0px 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number]{
+    -moz-appearance: textfield;
+}
+
+.quantity input{
+    width: 125px;
+    height: 33px;
+    line-height: 1.65;
+    float: left;
+    display: block;
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
+    border: 1px solid #bbb;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.quantity input:focus{
+    outline: 0;
+}
+
+.quantity-nav{
+    float: left;
+    position: relative;
+    height: 42px;
+}
+
+.quantity-button{
+    position: relative;
+    border: none !important;
+    cursor: pointer;
+    width: 25px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+    line-height: 22px;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.quantity-button.quantity-up{
+    position: absolute;
+    height: 17px;
+    top: 0;
+}
+
+.quantity-button.quantity-down{
+    position: absolute;
+    bottom: 10px;
+    height: 17px;
+    line-height: 15px;
+}
+
+/* Numbers Input End */
+/* Group for Input Start */
+
+.group > label{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.group{
+    margin: 0px 10px;
+}
+
+/* Button Snake Animation Start */
+
+.price-a{
+    position: relative;
+    overflow: hidden;
+    height: 50px;
+    text-align: center;
+    box-shadow: 0px 0px 20px #000;
+    line-height: 50px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.snake-span1, .snake-span2, .snake-span3, .snake-span4{
+    position: absolute;
+    display: block;
+}
+
+.snake-span1{
+    top: 0%;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #fff);
+}
+
+.snake-span2{
+    top: -100%;
+    right: 0%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #fff);
+}
+
+.snake-span3{
+    bottom: 0%;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #fff);
+}
+
+.snake-span4{
+    bottom: -100%;
+    left: 0%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #fff);
+}
+
+.price-a:hover .snake-span1{
+    left: 100%;
+    transition: 1s;
+}
+
+.price-a:hover .snake-span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.price-a:hover .snake-span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+.price-a:hover .snake-span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.8s;
+}
+
+/* Button Snake Animation End */
+/* Footer CSS Start */
+
+.page-footer{
+    background: #181620;
+}
+
+.mb-0{
+    color: #fff;
+    font-weight: 100;
+}
+
+.social-icons, .titles{
+    color: #fff !important;
+}
+
+.deep-purple.accent-2{
+    background-color: #7c4dff !important;
+}
+
+.footer-links, .footer-text{
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-weight: 100;
+    font-size: 15px;
+    text-decoration: none !important;
+}
+
+.footer-links{
+    font-weight: 500 !important;
+}
+
+.footer-links:hover{
+    color: rgba(255, 255, 255, 1) !important;
+    font-weight: 500;
+}
+
+.fas{
+    color: #fff !important;
+}
+
+.footer-copyright{
+    background-color: #0e0923 !important;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-copyright > a{
+    color: #fff !important;
+    text-decoration: none !important;
+    font-weight: 500;
+}
+
+.para-margin-remove > p{
+    margin-bottom: 10px !important;
+}
+
+/* Footer CSS End */
+/* All Media Queries Start */
+
+@media (min-width: 687px){
+    .book-now-btn{
+        top: 130px;
+    }
+}
+
+@media (min-width: 638px) and (max-width: 686px){
+    .book-now-btn{
+        top: 220px;
+    }
+}
+
+@media (max-width: 637px){
+    .book-now-btn{
+        top: 240px;
+    }
+}
+
+@media (max-width: 1055px){
+    .img-details{
+        width: 100%;
+        height: 430px;
+    }
+    .about-1{
+        display: block;
+    }
+    .img1{
+        width: 100%;
+    }
+    .panel-button{
+        margin-top: 0px !important;
+        padding-top: 250px;
+    }
+}
+
+/* All Media Queries End */

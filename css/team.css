@@ -1,0 +1,197 @@
+.title{
+    font-weight: 700;
+    margin: 0px !important;
+    font-size: 5em;
+}
+
+.main{
+    padding: 0px;
+    margin: 0px;
+    background-image: url(../images/team/team.jpg);
+    background-size: cover;
+  	background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title{
+    text-shadow: 0px 3px 5px #000;
+    pointer-events: none;
+}
+
+.title-container a{
+    color: #fff;
+    text-decoration: none !important;
+    font-weight: bold;
+    text-shadow: 0px 3px 5px #000;
+}
+
+.title-container a:hover{
+    color: #ffeb3b
+}
+
+.title-container span{
+    font-weight: bold;
+    text-shadow: 0px 3px 5px #000;
+    pointer-events: none;
+}
+
+.title-container span > a{
+    pointer-events: auto;
+}
+
+.main-content{
+    background: #0e0923;
+    padding: 100px 70px;
+    color: #fff;
+    position: relative;
+}
+
+.paddingremove-tb{
+    padding: 0px 70px 70px 70px !important;
+}
+
+.mg-bottom > h2{
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.title-div{
+    position: relative;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.mg-bottom{
+    padding-bottom: 1px;
+}
+
+.border-b{
+    bottom: 0%;
+    left: 34%;
+    width: 18%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #fff);
+    position: absolute;
+    display: block;
+}
+
+.partition{
+    bottom: 15% !important;
+    left: 5% !important;
+    width: 85% !important;
+}
+
+.main-top > p{
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 100;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+.oswald{
+    font-family: 'Oswald', sans-serif;
+}
+
+.card{
+    width: 100%; 
+    height: 300px;
+    color: #D6D600;
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition:all 0.3s ease-in-out;
+    opacity:1;
+    border-radius: 0px !important;
+}
+
+.card:hover .card-img,
+.card:focus .card-img {
+    transform: scale(1.02);
+    opacity: 0.5;
+}
+
+.card:hover .card-img-overlay{
+    color: #730d0d;
+}
+
+.card-img-overlay > h4, .card-img-overlay > p{
+    visibility: hidden;
+}
+
+.card-img-overlay:hover h4, .card-img-overlay:hover p{
+    visibility: visible;
+}
+
+.card:hover .card-img-overlay p{
+    font-size:1.5em;
+    letter-spacing:0.02em;
+}
+
+.card{
+    height: 400px !important;
+    border: none !important;
+    border-radius: 0px !important;
+    box-shadow: 0px 0px 20px #000;
+}
+
+.card-img-overlay{
+    text-transform: uppercase !important;
+}
+
+/* All Media Queries Start */
+
+@media (min-width: 989px){
+    .bg-filter{
+        height: 60vh !important;
+    }
+    .title-container{
+        position: absolute;
+        top: 130px !important;
+        right: 0;
+        left: 0;
+        text-align: center;
+        justify-content: center;
+        height: 18%;
+        margin: auto;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .center{
+        opacity: 0;
+    }
+    .main-top > p{
+        padding: 0px 80px;
+    }
+}
+
+@media (max-width: 988px){
+    .bg-filter{
+        height: 100vh !important;
+    }
+    .title-container{
+        position: absolute;
+        top: 170px !important;
+        right: 0;
+        left: 0;
+        text-align: center;
+        justify-content: center;
+        height: 18%;
+        margin: auto;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .center{
+        opacity: 1;
+    }
+    .main-top > p{
+        padding: 0px 30px;
+    }
+}
+
+/* All Media Queries End */
